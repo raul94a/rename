@@ -1,0 +1,14 @@
+{
+  "name": "rename-to-lowercase",
+  "version": "1.0.0",
+  "description": "Rename all files of specific folder recursively to lowercase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "R.Albin",
+  "license": "ISC",
+  "bin": {
+    "rename": "./bin/index.js"
+  }
+}
