@@ -1,7 +1,8 @@
+#! /usr/bin/env node
 const fs = require('fs/promises')
 const path = require('path');
-
-const filepath = process.argv[1]
+console.log('initializing script')
+const filepath = process.argv[2]
 
 async function recursiveChanger(filepath) {
     const info = await fs.readdir(filepath)
@@ -15,6 +16,7 @@ async function recursiveChanger(filepath) {
             fs.rename(newPath, path.join(filepath,newFilename))
         }
     }
+    console.log('All your file names in ' + filepath + ' have been changed to lowercase' )
 }
 
 recursiveChanger(filepath)

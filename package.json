@@ -9,6 +9,6 @@
   "author": "R.Albin",
   "license": "ISC",
   "bin": {
-    "rename": "./bin/index.js"
+    "rename": "./index.js"
   }
 }
