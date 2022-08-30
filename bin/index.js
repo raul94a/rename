@@ -1,7 +1,7 @@
 const fs = require('fs/promises')
 const path = require('path');
 
-const filepath = process.argv[2]
+const filepath = process.argv[1]
 
 async function recursiveChanger(filepath) {
     const info = await fs.readdir(filepath)
